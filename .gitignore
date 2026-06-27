@@ -1,0 +1,4 @@
+node_modules/
+yashwrites-site/
+*.zip
+.DS_Store
