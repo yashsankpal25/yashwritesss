@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YashWrites</title>
-<meta name="description" content="YashWrites — Stories of love, distance, and the things we carry quietly. Author Yash.">
+<title>Yash | Author Portfolio</title>
+<meta name="description" content="Yash — Contemporary fiction exploring love, distance, and the things we carry quietly. Official portfolio and newsletter.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -690,6 +690,14 @@ nav.s {
   margin-bottom: 2rem;
   display: flex; align-items: center; justify-content: center;
 }
+.about-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+  transition: opacity 0.3s;
+}
+.about-portrait:hover img { opacity: 1; }
 .portrait-letter {
   font-family: var(--serif);
   font-size: 9rem;
@@ -706,12 +714,14 @@ nav.s {
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: rgba(201,168,76,0.4);
+  z-index: 2;
 }
 .portrait-corner {
   position: absolute;
   width: 20px; height: 20px;
   border-color: rgba(201,168,76,0.2);
   border-style: solid;
+  z-index: 2;
 }
 .c-tl { top: 12px; left: 12px; border-width: 1px 0 0 1px; }
 .c-br { bottom: 12px; right: 12px; border-width: 0 1px 1px 0; }
@@ -1025,9 +1035,9 @@ footer {
 <section id="hero">
   <div class="hero-vline"></div>
   <div class="hero-left">
-    <div class="hero-eyebrow">A Digital Library</div>
+    <div class="hero-eyebrow">The Official Portfolio of Author Yash</div>
     <h1 class="hero-h1">Stories<br>of what<br>we <em>carry</em></h1>
-    <p class="hero-desc">Fiction about love, distance, and the specific loneliness of being deeply connected to someone you cannot reach. By author Yash.</p>
+    <p class="hero-desc">Fiction about love, distance, and the specific loneliness of being deeply connected to someone you cannot reach. By contemporary novelist Yash.</p>
     <div class="hero-btns">
       <a href="#featured" class="btn-primary">Explore Books</a>
       <a href="#about" class="btn-ghost">About the Author</a>
@@ -1043,11 +1053,8 @@ footer {
           <div class="bf-sub">A story of 1,807 kilometres, two names typed into a phone, and one heart that never learned to stop.</div>
           <div class="bf-author">Yash</div>
         </div>
-        <div class="book-spine">
-          <span class="spine-text">The Thing About Silence · Yash</span>
-        </div>
+        <div class="book-shadow"></div>
       </div>
-      <div class="book-shadow"></div>
     </div>
     <div class="hero-bg-text">Silence</div>
   </div>
@@ -1106,7 +1113,7 @@ footer {
           </div>
         </div>
         <div class="feat-actions">
-          <a href="Silence.pdf" download="The-Thing-About-Silence-Yash.pdf" class="btn-primary">Download Free</a>
+          <a href="#newsletter" class="btn-primary">Download Free Copy</a>
           <a href="#preview" class="action-link">Read Sample</a>
           <a href="#" class="action-link">Share</a>
         </div>
@@ -1134,9 +1141,9 @@ footer {
     <div class="preview-header r">
       <div>
         <span class="eyebrow">Inside the Book</span>
-        <h2 class="section-h">Chapters</h2>
+        <h2 class="section-h">Featured Excerpts</h2>
       </div>
-      <a href="Silence.pdf" download="The-Thing-About-Silence-Yash.pdf" class="btn-ghost" style="font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:rgba(232,228,220,0.3); text-decoration:none; display:inline-flex; align-items:center; gap:0.4rem; transition:color .25s;" onmouseover="this.style.color='rgba(232,228,220,0.8)'" onmouseout="this.style.color='rgba(232,228,220,0.3)'">Download to read all ↗</a>
+      <a href="#newsletter" class="btn-ghost" style="font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:rgba(232,228,220,0.3); text-decoration:none; display:inline-flex; align-items:center; gap:0.4rem; transition:color .25s;" onmouseover="this.style.color='rgba(232,228,220,0.8)'" onmouseout="this.style.color='rgba(232,228,220,0.3)'">Subscribe to read all ↗</a>
     </div>
     <div class="chapters-grid r d2">
       <div class="chapter-item">
@@ -1188,6 +1195,7 @@ footer {
       </div>
       <div class="about-side r d3">
         <div class="about-portrait">
+          <!-- Add a professional portrait here when ready: <img src="portrait.jpg" alt="Yash Portrait"> -->
           <div class="portrait-letter">Y</div>
           <div class="portrait-label">Yash · Author</div>
           <div class="portrait-corner c-tl"></div>
@@ -1247,7 +1255,7 @@ footer {
       <div class="r">
         <span class="eyebrow">Stay in the story</span>
         <h2 class="nl-h">Know first,<br>when the next book <em>arrives</em></h2>
-        <p class="nl-desc">No noise, no filler. A quiet message when there's something worth reading — a new novel, a sample chapter, or a note from Yash on the work in progress.</p>
+        <p class="nl-desc">Receive a complimentary PDF of 'The Thing About Silence' when you join. No noise, no filler. A quiet message when there's something worth reading.</p>
       </div>
       <div class="r d2">
         <div class="nl-form">
@@ -1255,7 +1263,7 @@ footer {
             <input type="email" placeholder="your@email.com" class="nl-input" id="nl-input">
             <button class="nl-btn" id="nl-btn">Subscribe</button>
           </div>
-          <div class="nl-note">No spam, ever. Unsubscribe at any time.</div>
+          <div class="nl-note">Your email is kept confidential. Unsubscribe at any time.</div>
         </div>
       </div>
     </div>
@@ -1268,8 +1276,8 @@ footer {
     <div class="contact-grid">
       <div class="r">
         <span class="eyebrow">Correspondence</span>
-        <h2 class="contact-h">Say the thing<br>you couldn't say <em>sideways</em></h2>
-        <p class="contact-p">For reader letters, press enquiries, rights, or simply to share what the book did to you. Yash reads everything, though he may take a while — he tends to overthink responses.</p>
+        <h2 class="contact-h">Inquiries &<br>Correspondence</h2>
+        <p class="contact-p">For reader letters, press enquiries, rights, or general collaborations. Yash reads everything, though he may take a while to respond thoughtfully.</p>
         <div class="contact-channels">
           <a href="https://www.instagram.com/_wordsbyyash?igsh=bzBpcjhldWluM3l2&utm_source=qr" target="_blank" class="cc-item">
             <span class="cc-platform">Instagram</span>
@@ -1284,11 +1292,11 @@ footer {
       <form class="contact-form r d2" id="cform">
         <div class="cf-field">
           <label class="cf-label">Name</label>
-          <input type="text" class="cf-input" placeholder="Your name">
+          <input type="text" class="cf-input" placeholder="Your name" required>
         </div>
         <div class="cf-field">
           <label class="cf-label">Email</label>
-          <input type="email" class="cf-input" placeholder="your@email.com">
+          <input type="email" class="cf-input" placeholder="your@email.com" required>
         </div>
         <div class="cf-field">
           <label class="cf-label">Subject</label>
@@ -1296,7 +1304,7 @@ footer {
         </div>
         <div class="cf-field">
           <label class="cf-label">Message</label>
-          <textarea class="cf-textarea" placeholder="Everything you couldn't say sideways..."></textarea>
+          <textarea class="cf-textarea" placeholder="Write your message here..." required></textarea>
         </div>
         <button type="submit" class="cf-submit" id="csub">Send →</button>
       </form>
@@ -1314,7 +1322,7 @@ footer {
     <li><a href="#newsletter">Subscribe</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <div class="ft-copy">© 2026 YashWrites</div>
+  <div class="ft-copy">© 2026 YashWrites. All Rights Reserved.</div>
 </footer>
 
 <script>
@@ -1338,7 +1346,7 @@ document.addEventListener('mousemove', e => {
   requestAnimationFrame(loop);
 })();
 
-['a','button','.book-card','.chapter-item','.review-item'].forEach(sel => {
+['a','button','.book','.chapter-item','.review-item'].forEach(sel => {
   document.querySelectorAll(sel).forEach(el => {
     el.addEventListener('mouseenter', () => {
       cur.style.width = '14px'; cur.style.height = '14px';
@@ -1384,8 +1392,16 @@ document.querySelectorAll('.r').forEach(el => obs.observe(el));
 document.getElementById('nl-btn').addEventListener('click', () => {
   const inp = document.getElementById('nl-input');
   if (inp.value.includes('@')) {
+    // Simulating email collection loop and offering the free document access hook 
+    const link = document.createElement('a');
+    link.href = 'Silence.pdf';
+    link.download = 'The-Thing-About-Silence-Yash.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
     inp.value = '';
-    inp.placeholder = 'You\'re on the list ✓';
+    inp.placeholder = 'Downloading copy & Subscribed ✓';
     const btn = document.getElementById('nl-btn');
     btn.textContent = 'Done';
     btn.style.color = '#7EC97E';
