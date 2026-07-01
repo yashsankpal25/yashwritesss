@@ -1,51 +1,45 @@
+
+
+Index · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EDMH88ER4C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-EDMH88ER4C');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>YashWrites</title>
 <meta name="description" content="YashWrites — Stories of love, distance, and the things we carry quietly. Author Yash.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; scroll-behavior: smooth; }
-
+ 
 :root {
-  --ink: #0A0A0A;
-  --ink-soft: #1A1A1A;
-  --paper: #F5F2EE;
-  --paper-warm: #EFEBE4;
-  --gold: #C9A84C;
-  --gold-light: #E8C97A;
-  --text: #0A0A0A;
-  --muted: #6B6560;
-  --faint: #B8B4AE;
-  --line: rgba(10,10,10,0.1);
-  --serif: 'Cormorant Garamond', 'Times New Roman', serif;
-  --sans: 'DM Sans', system-ui, sans-serif;
+  --ink: #17120C;
+  --ink-soft: #201810;
+  --paper: #F3E9D4;
+  --paper-warm: #EADDC0;
+  --gold: #C9A44A;
+  --gold-light: #E6C97F;
+  --text: #17120C;
+  --muted: #8C7F68;
+  --faint: #C9BFAA;
+  --line: rgba(40,28,16,0.16);
+  --serif: 'Fraunces', 'Times New Roman', serif;
+  --sans: 'Work Sans', system-ui, sans-serif;
 }
-
+ 
 body {
   background: var(--ink);
-  color: #E8E4DC;
+  color: #F0E8D8;
   font-family: var(--sans);
   font-weight: 300;
   line-height: 1.6;
   overflow-x: hidden;
   cursor: none;
 }
-
+ 
 /* ─── CURSOR ─────────────────────────────────── */
 #cur {
   width: 8px; height: 8px;
@@ -59,7 +53,7 @@ body {
 }
 #cur-ring {
   width: 32px; height: 32px;
-  border: 1px solid rgba(201,168,76,0.35);
+  border: 1px solid rgba(201,164,74,0.35);
   border-radius: 50%;
   position: fixed; z-index: 9998;
   pointer-events: none;
@@ -67,7 +61,7 @@ body {
   transition: width .3s, height .3s, border-color .3s;
 }
 body a:hover ~ #cur, body button:hover ~ #cur { width: 14px; height: 14px; }
-
+ 
 /* ─── LOADER ─────────────────────────────────── */
 #loader {
   position: fixed; inset: 0; z-index: 10000;
@@ -84,7 +78,7 @@ body a:hover ~ #cur, body button:hover ~ #cur { width: 14px; height: 14px; }
   font-weight: 300;
   letter-spacing: 0.18em;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(201,168,76,0.5);
+  -webkit-text-stroke: 1px rgba(201,164,74,0.5);
   clip-path: inset(0 100% 0 0);
   animation: reveal-word 1.2s cubic-bezier(0.77,0,0.18,1) 0.4s forwards;
 }
@@ -96,7 +90,7 @@ body a:hover ~ #cur, body button:hover ~ #cur { width: 14px; height: 14px; }
 }
 @keyframes reveal-word { to { clip-path: inset(0 0% 0 0); } }
 @keyframes reveal-line { to { width: 120px; } }
-
+ 
 /* ─── NAVBAR ─────────────────────────────────── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -107,7 +101,7 @@ nav {
 }
 nav.s {
   padding: 1.2rem 4vw;
-  background: rgba(10,10,10,0.92);
+  background: rgba(23,18,12,0.92);
   backdrop-filter: blur(24px);
   border-color: rgba(255,255,255,0.05);
 }
@@ -115,7 +109,7 @@ nav.s {
   font-family: var(--serif);
   font-size: 1.25rem;
   font-weight: 400;
-  color: #E8E4DC;
+  color: #F0E8D8;
   text-decoration: none;
   letter-spacing: 0.08em;
 }
@@ -125,12 +119,12 @@ nav.s {
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(232,228,220,0.45);
+  color: rgba(240,232,216,0.45);
   text-decoration: none;
   font-weight: 400;
   transition: color .25s;
 }
-.nav-links a:hover { color: #E8E4DC; }
+.nav-links a:hover { color: #F0E8D8; }
 .nav-cta {
   font-size: 0.72rem;
   letter-spacing: 0.14em;
@@ -138,12 +132,13 @@ nav.s {
   color: var(--gold);
   text-decoration: none;
   font-weight: 400;
-  border: 1px solid rgba(201,168,76,0.3);
+  border: 1px solid rgba(201,164,74,0.3);
   padding: 0.55rem 1.2rem;
+  border-radius: 999px;
   transition: background .25s, border-color .25s, color .25s;
 }
-.nav-cta:hover { background: rgba(201,168,76,0.1); border-color: var(--gold); }
-
+.nav-cta:hover { background: rgba(201,164,74,0.1); border-color: var(--gold); }
+ 
 /* ─── HERO ────────────────────────────────────── */
 #hero {
   min-height: 100vh;
@@ -185,7 +180,7 @@ nav.s {
 }
 .hero-desc {
   font-size: 0.9rem;
-  color: rgba(232,228,220,0.5);
+  color: rgba(240,232,216,0.5);
   line-height: 1.85;
   max-width: 380px;
   margin-bottom: 3rem;
@@ -207,6 +202,7 @@ nav.s {
   background: var(--gold);
   text-decoration: none;
   padding: 0.85rem 2rem;
+  border-radius: 999px;
   transition: background .2s, transform .2s;
   display: inline-block;
 }
@@ -216,22 +212,23 @@ nav.s {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   font-weight: 400;
-  color: rgba(232,228,220,0.5);
+  color: rgba(240,232,216,0.5);
   text-decoration: none;
   transition: color .25s;
   display: inline-flex; align-items: center; gap: 0.5rem;
 }
-.btn-ghost:hover { color: #E8E4DC; }
+.btn-ghost:hover { color: #F0E8D8; }
 .btn-ghost::after { content: '→'; }
-
+ 
 .hero-right {
   position: relative;
   display: flex; align-items: center; justify-content: center;
   overflow: hidden;
 }
-
+ 
 /* Book 3D */
 .book-scene {
+  position: relative;
   perspective: 1400px;
   opacity: 0;
   animation: fadeIn .9s ease 2s forwards;
@@ -255,8 +252,8 @@ nav.s {
 }
 .book-front {
   position: absolute; inset: 0;
-  background: #0D1320;
-  border: 1px solid rgba(201,168,76,0.15);
+  background: #1E140A;
+  border: 1px solid rgba(201,164,74,0.15);
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   padding: 2rem 1.5rem;
@@ -267,7 +264,7 @@ nav.s {
   font-size: 0.52rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: rgba(201,168,76,0.5);
+  color: rgba(201,164,74,0.5);
   margin-bottom: 1.5rem;
 }
 .bf-title {
@@ -275,7 +272,7 @@ nav.s {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.35;
-  color: #E8E4DC;
+  color: #F0E8D8;
   margin-bottom: 0.4rem;
 }
 .bf-title em { font-style: italic; color: var(--gold); }
@@ -287,7 +284,7 @@ nav.s {
 }
 .bf-sub {
   font-size: 0.58rem;
-  color: rgba(232,228,220,0.35);
+  color: rgba(240,232,216,0.35);
   font-style: italic;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -296,23 +293,23 @@ nav.s {
   font-size: 0.52rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(201,168,76,0.4);
+  color: rgba(201,164,74,0.4);
 }
 .book-spine {
   position: absolute;
   left: -36px; top: 0;
   width: 36px; height: 280px;
-  background: linear-gradient(to right, #06090F, #0D1320);
+  background: linear-gradient(to right, #06090F, #1E140A);
   transform: rotateY(-90deg);
   transform-origin: right;
-  border-left: 1px solid rgba(201,168,76,0.1);
+  border-left: 1px solid rgba(201,164,74,0.1);
   display: flex; align-items: center; justify-content: center;
 }
 .spine-text {
   font-family: var(--serif);
   font-size: 0.5rem;
   letter-spacing: 0.15em;
-  color: rgba(201,168,76,0.4);
+  color: rgba(201,164,74,0.4);
   writing-mode: vertical-rl;
   text-transform: uppercase;
 }
@@ -320,7 +317,7 @@ nav.s {
   position: absolute;
   bottom: -40px; left: -10%;
   width: 120%; height: 40px;
-  background: radial-gradient(ellipse at 45% 0, rgba(201,168,76,0.12), transparent 70%);
+  background: radial-gradient(ellipse at 45% 0, rgba(201,164,74,0.12), transparent 70%);
   filter: blur(8px);
   animation: shadow-pulse 7s ease-in-out infinite;
 }
@@ -328,7 +325,7 @@ nav.s {
   0%,100% { opacity: 0.8; }
   50% { opacity: 0.3; }
 }
-
+ 
 /* Big background text */
 .hero-bg-text {
   position: absolute;
@@ -345,7 +342,7 @@ nav.s {
   white-space: nowrap;
   z-index: 1;
 }
-
+ 
 /* Scroll line */
 .scroll-hint {
   position: absolute;
@@ -356,7 +353,7 @@ nav.s {
 }
 .sh-line {
   width: 40px; height: 1px;
-  background: rgba(232,228,220,0.2);
+  background: rgba(240,232,216,0.2);
   position: relative; overflow: hidden;
 }
 .sh-line::after {
@@ -373,17 +370,49 @@ nav.s {
   font-size: 0.62rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(232,228,220,0.25);
+  color: rgba(240,232,216,0.25);
 }
-
+ 
 /* Vertical gold line divider */
 .hero-vline {
   position: absolute;
   top: 15vh; bottom: 0;
   left: 50%;
   width: 1px;
-  background: linear-gradient(to bottom, transparent, rgba(201,168,76,0.15) 20%, rgba(201,168,76,0.15) 80%, transparent);
+  background: linear-gradient(to bottom, transparent, rgba(201,164,74,0.15) 20%, rgba(201,164,74,0.15) 80%, transparent);
   z-index: 1;
+}
+ 
+/* ─── HERO SHELF DRESSING ─────────────────────── */
+.shelf-wall {
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(
+    to right,
+    rgba(201,164,74,0.05) 0px, rgba(201,164,74,0.05) 3px,
+    transparent 3px, transparent 34px,
+    rgba(181,97,91,0.045) 34px, rgba(181,97,91,0.045) 37px,
+    transparent 37px, transparent 68px
+  );
+  opacity: 0.6;
+  z-index: 0;
+  mask-image: radial-gradient(ellipse 65% 60% at 50% 45%, black 0%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 65% 60% at 50% 45%, black 0%, transparent 75%);
+}
+.shelf-plank {
+  position: absolute;
+  bottom: -46px; left: 50%; transform: translateX(-50%);
+  width: 340px; height: 14px;
+  background: linear-gradient(to bottom, #3A2A15, #1E1409);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.55), inset 0 1px 0 rgba(230,201,127,0.15);
+  border-radius: 2px;
+}
+.lamp-glow {
+  position: absolute;
+  top: -20%; left: 50%; transform: translateX(-50%);
+  width: 420px; height: 420px;
+  background: radial-gradient(ellipse at center, rgba(230,201,127,0.14), transparent 70%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* ─── UTILITY ─────────────────────────────────── */
@@ -404,7 +433,7 @@ nav.s {
   letter-spacing: -0.01em;
 }
 .section-h em { font-style: italic; color: var(--gold); }
-
+ 
 /* Reveal */
 .r {
   opacity: 0;
@@ -416,13 +445,13 @@ nav.s {
 .r.d2 { transition-delay: 0.2s; }
 .r.d3 { transition-delay: 0.3s; }
 .r.d4 { transition-delay: 0.45s; }
-
+ 
 @keyframes up {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 @keyframes fadeIn { to { opacity: 1; } }
-
+ 
 /* ─── FEATURED BOOK ───────────────────────────── */
 #featured {
   padding: 10rem 0 8rem;
@@ -433,14 +462,23 @@ nav.s {
   grid-template-columns: 1fr 1.1fr;
   gap: 8rem;
   align-items: center;
+  position: relative;
+}
+.feat-grid::before {
+  content: '';
+  position: absolute;
+  top: 4%; bottom: 4%; left: calc(50% - 1px);
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, rgba(230,201,127,0.18) 15%, rgba(230,201,127,0.18) 85%, transparent);
+  filter: blur(0.5px);
 }
 .feat-cover {
   position: relative;
 }
 .feat-cover-inner {
   aspect-ratio: 2/3;
-  background: #0C1220;
-  border: 1px solid rgba(201,168,76,0.12);
+  background: #1D130A;
+  border: 1px solid rgba(201,164,74,0.12);
   display: flex; flex-direction: column;
   align-items: center; justify-content: space-between;
   padding: 3rem 2.5rem;
@@ -449,7 +487,7 @@ nav.s {
   overflow: hidden;
   transition: border-color .4s;
 }
-.feat-cover-inner:hover { border-color: rgba(201,168,76,0.3); }
+.feat-cover-inner:hover { border-color: rgba(201,164,74,0.3); }
 .feat-cover-inner::before {
   content: '';
   position: absolute;
@@ -462,20 +500,20 @@ nav.s {
   font-size: 0.55rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: rgba(201,168,76,0.45);
+  color: rgba(201,164,74,0.45);
 }
 .fc-title {
   font-family: var(--serif);
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.3;
-  color: #E8E4DC;
+  color: #F0E8D8;
 }
 .fc-title em { font-style: italic; color: var(--gold); }
 .fc-hr { width: 32px; height: 1px; background: var(--gold); margin: 1.5rem auto; opacity: 0.35; }
 .fc-tagline {
   font-size: 0.78rem;
-  color: rgba(232,228,220,0.3);
+  color: rgba(240,232,216,0.3);
   font-style: italic;
   line-height: 1.7;
 }
@@ -485,13 +523,13 @@ nav.s {
 .fc-dist {
   font-size: 0.6rem;
   letter-spacing: 0.25em;
-  color: rgba(201,168,76,0.4);
+  color: rgba(201,164,74,0.4);
   text-transform: uppercase;
 }
 .fc-author-name {
   font-size: 0.6rem;
   letter-spacing: 0.35em;
-  color: rgba(201,168,76,0.55);
+  color: rgba(201,164,74,0.55);
   text-transform: uppercase;
 }
 .feat-num {
@@ -501,7 +539,7 @@ nav.s {
   font-size: 6rem;
   font-weight: 300;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(201,168,76,0.1);
+  -webkit-text-stroke: 1px rgba(201,164,74,0.1);
   line-height: 1;
   user-select: none;
 }
@@ -515,9 +553,10 @@ nav.s {
   font-size: 0.62rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(232,228,220,0.4);
+  color: rgba(240,232,216,0.4);
   border: 1px solid rgba(255,255,255,0.08);
   padding: 0.3rem 0.8rem;
+  border-radius: 999px;
   font-weight: 400;
 }
 .feat-h {
@@ -531,7 +570,7 @@ nav.s {
 .feat-h em { font-style: italic; color: var(--gold); }
 .feat-synopsis {
   font-size: 0.88rem;
-  color: rgba(232,228,220,0.45);
+  color: rgba(240,232,216,0.45);
   line-height: 1.9;
   margin-bottom: 2.5rem;
   font-weight: 300;
@@ -548,7 +587,7 @@ nav.s {
   font-family: var(--serif);
   font-size: 1.5rem;
   font-weight: 400;
-  color: #E8E4DC;
+  color: #F0E8D8;
   display: block;
   line-height: 1;
   margin-bottom: 0.3rem;
@@ -557,21 +596,21 @@ nav.s {
   font-size: 0.62rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(232,228,220,0.3);
+  color: rgba(240,232,216,0.3);
 }
 .feat-actions { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
 .action-link {
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(232,228,220,0.4);
+  color: rgba(240,232,216,0.4);
   text-decoration: none;
   transition: color .25s;
   display: inline-flex; align-items: center; gap: 0.4rem;
 }
-.action-link:hover { color: rgba(232,228,220,0.9); }
+.action-link:hover { color: rgba(240,232,216,0.9); }
 .action-link::after { content: '↗'; font-size: 0.65rem; }
-
+ 
 /* ─── SYNOPSIS PULL ───────────────────────────── */
 #pull {
   padding: 7rem 0;
@@ -587,7 +626,7 @@ nav.s {
   font-size: 0.68rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: rgba(232,228,220,0.25);
+  color: rgba(240,232,216,0.25);
   padding-top: 0.4rem;
 }
 .pull-quote {
@@ -596,7 +635,7 @@ nav.s {
   font-weight: 300;
   font-style: italic;
   line-height: 1.45;
-  color: rgba(232,228,220,0.8);
+  color: rgba(240,232,216,0.8);
   position: relative;
   padding-left: 2rem;
   border-left: 1px solid var(--gold);
@@ -606,10 +645,10 @@ nav.s {
   font-size: 0.72rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(232,228,220,0.25);
+  color: rgba(240,232,216,0.25);
   padding-left: 2rem;
 }
-
+ 
 /* ─── CHAPTER PREVIEW ─────────────────────────── */
 #preview {
   padding: 7rem 0;
@@ -649,17 +688,17 @@ nav.s {
   font-family: var(--serif);
   font-size: 1.05rem;
   font-weight: 400;
-  color: rgba(232,228,220,0.75);
+  color: rgba(240,232,216,0.75);
   line-height: 1.3;
   margin-bottom: 0.5rem;
 }
-.ch-title em { font-style: italic; color: rgba(201,168,76,0.7); }
+.ch-title em { font-style: italic; color: rgba(201,164,74,0.7); }
 .ch-desc {
   font-size: 0.78rem;
-  color: rgba(232,228,220,0.25);
+  color: rgba(240,232,216,0.25);
   line-height: 1.7;
 }
-
+ 
 /* ─── ABOUT ───────────────────────────────────── */
 #about {
   padding: 10rem 0;
@@ -683,17 +722,17 @@ nav.s {
 .about-h em { font-style: italic; color: var(--gold); }
 .about-p {
   font-size: 0.88rem;
-  color: rgba(232,228,220,0.45);
+  color: rgba(240,232,216,0.45);
   line-height: 1.95;
   margin-bottom: 1.25rem;
   font-weight: 300;
 }
-.about-p strong { color: rgba(232,228,220,0.7); font-weight: 400; }
+.about-p strong { color: rgba(240,232,216,0.7); font-weight: 400; }
 .about-side { padding-top: 4rem; }
 .about-portrait {
   aspect-ratio: 3/4;
-  background: #0C1220;
-  border: 1px solid rgba(201,168,76,0.1);
+  background: #1D130A;
+  border: 1px solid rgba(201,164,74,0.1);
   position: relative;
   overflow: hidden;
   margin-bottom: 2rem;
@@ -704,7 +743,7 @@ nav.s {
   font-size: 9rem;
   font-weight: 300;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(201,168,76,0.12);
+  -webkit-text-stroke: 1px rgba(201,164,74,0.12);
   user-select: none;
   line-height: 1;
 }
@@ -714,12 +753,12 @@ nav.s {
   font-size: 0.6rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: rgba(201,168,76,0.4);
+  color: rgba(201,164,74,0.4);
 }
 .portrait-corner {
   position: absolute;
   width: 20px; height: 20px;
-  border-color: rgba(201,168,76,0.2);
+  border-color: rgba(201,164,74,0.2);
   border-style: solid;
 }
 .c-tl { top: 12px; left: 12px; border-width: 1px 0 0 1px; }
@@ -732,7 +771,7 @@ nav.s {
   font-family: var(--serif);
   font-size: 1rem;
   font-style: italic;
-  color: rgba(232,228,220,0.5);
+  color: rgba(240,232,216,0.5);
   line-height: 1.7;
   margin-bottom: 0.75rem;
 }
@@ -740,9 +779,9 @@ nav.s {
   font-size: 0.62rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(232,228,220,0.2);
+  color: rgba(240,232,216,0.2);
 }
-
+ 
 /* ─── REVIEWS ─────────────────────────────────── */
 #reviews {
   padding: 8rem 0;
@@ -780,7 +819,7 @@ nav.s {
   font-size: 1rem;
   font-style: italic;
   font-weight: 300;
-  color: rgba(232,228,220,0.6);
+  color: rgba(240,232,216,0.6);
   line-height: 1.75;
   margin-bottom: 1.5rem;
 }
@@ -788,16 +827,16 @@ nav.s {
 .ri-name {
   font-size: 0.72rem;
   font-weight: 400;
-  color: rgba(232,228,220,0.5);
+  color: rgba(240,232,216,0.5);
   letter-spacing: 0.05em;
 }
 .ri-src {
   font-size: 0.62rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(232,228,220,0.2);
+  color: rgba(240,232,216,0.2);
 }
-
+ 
 /* ─── NEWSLETTER ──────────────────────────────── */
 #newsletter {
   padding: 8rem 0;
@@ -819,7 +858,7 @@ nav.s {
 .nl-h em { font-style: italic; color: var(--gold); }
 .nl-desc {
   font-size: 0.85rem;
-  color: rgba(232,228,220,0.35);
+  color: rgba(240,232,216,0.35);
   line-height: 1.85;
   font-weight: 300;
 }
@@ -829,19 +868,19 @@ nav.s {
   border: 1px solid rgba(255,255,255,0.08);
   transition: border-color .3s;
 }
-.nl-field:focus-within { border-color: rgba(201,168,76,0.4); }
+.nl-field:focus-within { border-color: rgba(201,164,74,0.4); }
 .nl-input {
   flex: 1;
   background: transparent;
   border: none;
-  color: #E8E4DC;
+  color: #F0E8D8;
   font-family: var(--sans);
   font-size: 0.85rem;
   font-weight: 300;
   padding: 1rem 1.25rem;
   outline: none;
 }
-.nl-input::placeholder { color: rgba(232,228,220,0.2); }
+.nl-input::placeholder { color: rgba(240,232,216,0.2); }
 .nl-btn {
   background: transparent;
   border: none;
@@ -857,13 +896,13 @@ nav.s {
   transition: background .25s, color .25s;
   white-space: nowrap;
 }
-.nl-btn:hover { background: rgba(201,168,76,0.08); }
+.nl-btn:hover { background: rgba(201,164,74,0.08); }
 .nl-note {
   font-size: 0.68rem;
-  color: rgba(232,228,220,0.2);
+  color: rgba(240,232,216,0.2);
   letter-spacing: 0.05em;
 }
-
+ 
 /* ─── CONTACT ─────────────────────────────────── */
 #contact {
   padding: 8rem 0;
@@ -886,7 +925,7 @@ nav.s {
 .contact-h em { font-style: italic; color: var(--gold); }
 .contact-p {
   font-size: 0.85rem;
-  color: rgba(232,228,220,0.35);
+  color: rgba(240,232,216,0.35);
   line-height: 1.85;
   margin-bottom: 2.5rem;
   font-weight: 300;
@@ -905,15 +944,15 @@ nav.s {
   font-size: 0.62rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(201,168,76,0.5);
+  color: rgba(201,164,74,0.5);
   min-width: 60px;
 }
 .cc-handle {
   font-size: 0.82rem;
-  color: rgba(232,228,220,0.4);
+  color: rgba(240,232,216,0.4);
   transition: color .25s;
 }
-.cc-item:hover .cc-handle { color: rgba(232,228,220,0.8); }
+.cc-item:hover .cc-handle { color: rgba(240,232,216,0.8); }
 .contact-form { display: flex; flex-direction: column; gap: 0; }
 .cf-field {
   display: flex; flex-direction: column;
@@ -921,18 +960,18 @@ nav.s {
   padding: 1.25rem 0;
   transition: border-color .3s;
 }
-.cf-field:focus-within { border-color: rgba(201,168,76,0.35); }
+.cf-field:focus-within { border-color: rgba(201,164,74,0.35); }
 .cf-label {
   font-size: 0.62rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(232,228,220,0.25);
+  color: rgba(240,232,216,0.25);
   margin-bottom: 0.5rem;
 }
 .cf-input, .cf-textarea {
   background: transparent;
   border: none;
-  color: rgba(232,228,220,0.8);
+  color: rgba(240,232,216,0.8);
   font-family: var(--sans);
   font-size: 0.9rem;
   font-weight: 300;
@@ -940,7 +979,7 @@ nav.s {
   resize: none;
   line-height: 1.6;
 }
-.cf-input::placeholder, .cf-textarea::placeholder { color: rgba(232,228,220,0.15); }
+.cf-input::placeholder, .cf-textarea::placeholder { color: rgba(240,232,216,0.15); }
 .cf-textarea { min-height: 90px; }
 .cf-submit {
   margin-top: 2rem;
@@ -957,7 +996,7 @@ nav.s {
   transition: background .2s;
 }
 .cf-submit:hover { background: var(--gold-light); }
-
+ 
 /* ─── FOOTER ──────────────────────────────────── */
 footer {
   padding: 4rem 4vw;
@@ -968,7 +1007,7 @@ footer {
 .ft-logo {
   font-family: var(--serif);
   font-size: 1.1rem;
-  color: rgba(232,228,220,0.4);
+  color: rgba(240,232,216,0.4);
   letter-spacing: 0.08em;
 }
 .ft-logo span { color: var(--gold); opacity: 0.7; }
@@ -977,18 +1016,18 @@ footer {
   font-size: 0.68rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(232,228,220,0.2);
+  color: rgba(240,232,216,0.2);
   text-decoration: none;
   transition: color .25s;
   cursor: none;
 }
-.ft-nav a:hover { color: rgba(232,228,220,0.5); }
+.ft-nav a:hover { color: rgba(240,232,216,0.5); }
 .ft-copy {
   font-size: 0.68rem;
-  color: rgba(232,228,220,0.15);
+  color: rgba(240,232,216,0.15);
   letter-spacing: 0.05em;
 }
-
+ 
 /* ─── RESPONSIVE ──────────────────────────────── */
 @media (max-width: 960px) {
   .nav-links { display: none; }
@@ -1004,32 +1043,273 @@ footer {
   #featured, #about, #reviews, #newsletter, #contact { padding: 6rem 0; }
   footer { flex-direction: column; align-items: flex-start; }
 }
+ 
+/* ─── SECOND BOOK THEME (cool slate accent) ───── */
+:root {
+  --accent2: #B5615B;
+  --accent2-light: #D68F86;
+}
+#featured-2, #preview-2 { --gold: var(--accent2); --gold-light: var(--accent2-light); }
+#featured-2 { border-top: 1px solid rgba(255,255,255,0.06); padding: 8rem 0; }
+#featured-2 .eyebrow, #featured-2 .feat-h em, #featured-2 .fc-title em,
+#featured-2 .fc-hr, #preview-2 .eyebrow, #preview-2 .section-h em,
+#preview-2 .ch-num, #preview-2 .ch-title em {
+  color: var(--accent2);
+}
+#featured-2 .fc-hr { background: var(--accent2); }
+#featured-2 .genre-pill { color: rgba(214,143,134,0.55); border-color: rgba(181,97,91,0.18); }
+#featured-2 .fc-label { color: rgba(181,97,91,0.5); }
+#featured-2 .fc-dist { color: rgba(181,97,91,0.45); }
+#featured-2 .fc-author-name { color: rgba(214,143,134,0.6); }
+#featured-2 .feat-cover-inner {
+  background: radial-gradient(circle at 18% 22%, rgba(214,143,134,0.55) 0px, rgba(214,143,134,0.55) 1px, transparent 1.5px),
+              radial-gradient(circle at 72% 12%, rgba(214,143,134,0.4) 0px, rgba(214,143,134,0.4) 1px, transparent 1.5px),
+              radial-gradient(circle at 38% 78%, rgba(214,143,134,0.45) 0px, rgba(214,143,134,0.45) 1px, transparent 1.5px),
+              radial-gradient(circle at 85% 65%, rgba(214,143,134,0.3) 0px, rgba(214,143,134,0.3) 1px, transparent 1.5px),
+              radial-gradient(circle at 58% 40%, rgba(214,143,134,0.35) 0px, rgba(214,143,134,0.35) 1px, transparent 1.5px),
+              radial-gradient(circle at 10% 85%, rgba(214,143,134,0.3) 0px, rgba(214,143,134,0.3) 1px, transparent 1.5px),
+              linear-gradient(160deg, #170F0B, #1C120D 55%, #120A08);
+  border-color: rgba(181,97,91,0.15);
+}
+#featured-2 .feat-cover-inner:hover { border-color: rgba(181,97,91,0.32); }
+#featured-2 .feat-cover-inner::before { background: linear-gradient(to right, transparent, var(--accent2), transparent); }
+#featured-2 .feat-num { -webkit-text-stroke: 1px rgba(181,97,91,0.12); }
+#featured-2 .btn-primary { background: var(--accent2); color: #170F0B; }
+#featured-2 .btn-primary:hover { background: var(--accent2-light); }
+#featured-2 .action-link:hover { color: var(--accent2-light); }
+#preview-2 { background: #0E0806; padding-top: 6rem; padding-bottom: 6rem; }
+#preview-2 .chapter-item { background: #170F0B; }
+#preview-2 .chapter-item:hover { background: rgba(181,97,91,0.05); }
+ 
+/* ─── LIBRARY ──────────────────────────────────── */
+#library {
+  padding: 9rem 0 7rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  background: linear-gradient(180deg, transparent 0%, rgba(58,42,21,0.12) 100%);
+}
+.lib-header { margin-bottom: 4rem; max-width: 540px; }
+.lib-intro {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  color: rgba(240,232,216,0.4);
+  line-height: 1.8;
+  font-weight: 300;
+}
+.lib-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  perspective: 1600px;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+.lib-grid::after {
+  content: '';
+  position: absolute; left: -2vw; right: -2vw; bottom: 0;
+  height: 16px;
+  background: linear-gradient(to bottom, #4A3418, #211407);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.5), inset 0 1px 0 rgba(230,201,127,0.15);
+}
+.lib-card {
+  display: block;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.07);
+  cursor: none;
+  transform-origin: bottom center;
+  transition: transform .4s cubic-bezier(0.25,0.46,0.45,0.94), border-color .35s ease;
+}
+.lib-card:hover { transform: translateY(-10px) rotateX(-4deg); }
+.lib-card-cover {
+  aspect-ratio: 16/10;
+  display: flex; flex-direction: column;
+  align-items: flex-start; justify-content: flex-end;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.lib-tag {
+  position: absolute; top: 1.25rem; right: 1.5rem;
+  font-family: var(--serif);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+.lib-cover-title {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #F0E8D8;
+  margin-bottom: 0.6rem;
+}
+.lib-cover-sub {
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.lib-card-body {
+  padding: 1.75rem 2rem 2.25rem;
+}
+.lib-genre {
+  display: block;
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(240,232,216,0.35);
+  margin-bottom: 0.85rem;
+}
+.lib-card-title {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+  color: #F0E8D8;
+}
+.lib-card-desc {
+  font-size: 0.82rem;
+  color: rgba(240,232,216,0.4);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+.lib-card-cta {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: letter-spacing .25s;
+}
+.lib-card:hover .lib-card-cta { letter-spacing: 0.18em; }
+ 
+.lib-card--1 .lib-card-cover {
+  background: linear-gradient(160deg, #2A1E10, #1F160B 55%, #18110A);
+  border-bottom: 1px solid rgba(201,164,74,0.12);
+}
+.lib-card--1 .lib-tag, .lib-card--1 .lib-cover-title em,
+.lib-card--1 .lib-cover-sub, .lib-card--1 .lib-card-cta { color: var(--gold); }
+.lib-card--1:hover { border-color: rgba(201,164,74,0.3); }
+ 
+.lib-card--2 .lib-card-cover {
+  background: radial-gradient(circle at 18% 22%, rgba(214,143,134,0.5) 0px, rgba(214,143,134,0.5) 1px, transparent 1.5px),
+              radial-gradient(circle at 72% 15%, rgba(214,143,134,0.35) 0px, rgba(214,143,134,0.35) 1px, transparent 1.5px),
+              radial-gradient(circle at 85% 60%, rgba(214,143,134,0.3) 0px, rgba(214,143,134,0.3) 1px, transparent 1.5px),
+              linear-gradient(160deg, #170F0B, #1C120D 55%, #120A08);
+  border-bottom: 1px solid rgba(181,97,91,0.15);
+}
+.lib-card--2 .lib-tag, .lib-card--2 .lib-cover-title em,
+.lib-card--2 .lib-cover-sub, .lib-card--2 .lib-card-cta { color: var(--accent2, #B5615B); }
+.lib-card--2:hover { border-color: rgba(181,97,91,0.32); }
+ 
+@media (max-width: 760px) {
+  .lib-grid { grid-template-columns: 1fr; }
+}
+
+/* ─── LIBRARY ATMOSPHERE (3D depth layer) ─────── */
+#lib-atmos {
+  position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(ellipse 60% 40% at 20% 0%, rgba(201,164,74,0.07), transparent 60%),
+    radial-gradient(ellipse 50% 35% at 85% 15%, rgba(181,97,91,0.05), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 50% 100%, rgba(201,164,74,0.04), transparent 60%);
+}
+.dust { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.dust span {
+  position: absolute;
+  width: 3px; height: 3px;
+  background: rgba(201,164,74,0.5);
+  border-radius: 50%;
+  filter: blur(0.5px);
+  animation: motes linear infinite;
+}
+.dust span:nth-child(1) { left: 8%;  top: 100%; animation-duration: 18s; animation-delay: 0s; }
+.dust span:nth-child(2) { left: 22%; top: 100%; animation-duration: 24s; animation-delay: 3s; width:2px; height:2px; }
+.dust span:nth-child(3) { left: 40%; top: 100%; animation-duration: 20s; animation-delay: 6s; background: rgba(181,97,91,0.45); }
+.dust span:nth-child(4) { left: 58%; top: 100%; animation-duration: 26s; animation-delay: 1s; width:2px; height:2px; }
+.dust span:nth-child(5) { left: 74%; top: 100%; animation-duration: 22s; animation-delay: 8s; background: rgba(181,97,91,0.4); }
+.dust span:nth-child(6) { left: 88%; top: 100%; animation-duration: 19s; animation-delay: 4s; width:2px; height:2px; }
+.dust span:nth-child(7) { left: 50%; top: 100%; animation-duration: 28s; animation-delay: 10s; }
+@keyframes motes {
+  0%   { transform: translateY(0) translateX(0); opacity: 0; }
+  8%   { opacity: 0.7; }
+  92%  { opacity: 0.5; }
+  100% { transform: translateY(-105vh) translateX(30px); opacity: 0; }
+}
+/* ─── REAL BOOK COVER PHOTOGRAPH ──────────────── */
+.feat-cover { perspective: 1400px; }
+.feat-cover-inner.has-photo {
+  padding: 0;
+  background-image: linear-gradient(180deg, rgba(6,9,14,0) 58%, rgba(6,9,14,0.9) 100%), url('assets/space-between-waiting-cover.jpg');
+  background-size: cover;
+  background-position: center;
+  transform-style: preserve-3d;
+  transition: transform .6s cubic-bezier(0.25,0.46,0.45,0.94), border-color .4s;
+}
+.feat-cover-inner.has-photo:hover { transform: rotateY(-7deg) rotateX(2deg) scale(1.015); }
+.feat-cover-inner.has-photo > * { display: none; }
+.feat-cover-inner.has-photo::after {
+  content: '';
+  position: absolute; top: 0; right: 0; bottom: 0; width: 10px;
+  background: repeating-linear-gradient(to right, rgba(245,242,238,0.5) 0px, rgba(245,242,238,0.5) 1px, rgba(180,175,168,0.25) 1px, rgba(180,175,168,0.25) 2px);
+  box-shadow: -2px 0 8px rgba(0,0,0,0.35) inset;
+}
+
+.lib-card--2 .lib-card-cover.has-photo {
+  background-image: linear-gradient(180deg, rgba(6,9,14,0.05) 45%, rgba(6,9,14,0.85) 100%), url('assets/space-between-waiting-cover.jpg');
+  background-size: cover;
+  background-position: center 18%;
+}
+.lib-card--2 .lib-card-cover.has-photo .lib-cover-title,
+.lib-card--2 .lib-card-cover.has-photo .lib-cover-sub { display: none; }
+.lib-card--2 .lib-card-cover.has-photo { transition: transform .5s ease, background-position .5s ease; }
+.lib-card--2:hover .lib-card-cover.has-photo { background-position: center 10%; }
+
+/* ─── HERO BOOK: page edge + light sweep ──────── */
+.book-front { position: relative; overflow: hidden; }
+.book-front::after {
+  content: '';
+  position: absolute; top: 2px; right: 0; bottom: 2px; width: 6px;
+  background: repeating-linear-gradient(to right, rgba(245,242,238,0.35) 0px, rgba(245,242,238,0.35) 1px, rgba(150,145,138,0.15) 1px, rgba(150,145,138,0.15) 2px);
+}
+.book-front::before {
+  content: '';
+  position: absolute; top: -60%; left: -60%; width: 60%; height: 220%;
+  background: linear-gradient(115deg, transparent, rgba(255,255,255,0.08) 45%, transparent 55%);
+  animation: sheen 6s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes sheen {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(260%); }
+}
 </style>
 </head>
 <body>
-
+ 
+<!-- Library atmosphere (ambient light + drifting dust) -->
+<div id="lib-atmos"></div>
+<div class="dust"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+ 
 <!-- Cursor -->
 <div id="cur"></div>
 <div id="cur-ring"></div>
-
+ 
 <!-- Loader -->
 <div id="loader">
   <div class="ld-word">YashWrites</div>
   <div class="ld-line"></div>
 </div>
-
+ 
 <!-- Nav -->
 <nav id="nav">
   <a href="#" class="nav-logo">Yash<span>Writes</span></a>
   <ul class="nav-links">
-    <li><a href="#featured">Books</a></li>
+    <li><a href="#library">Library</a></li>
     <li><a href="#about">Author</a></li>
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="#newsletter" class="nav-cta">Subscribe</a>
 </nav>
-
+ 
 <!-- Hero -->
 <section id="hero">
   <div class="hero-vline"></div>
@@ -1038,11 +1318,12 @@ footer {
     <h1 class="hero-h1">Stories<br>of what<br>we <em>carry</em></h1>
     <p class="hero-desc">Fiction about love, distance, and the specific loneliness of being deeply connected to someone you cannot reach. By author Yash.</p>
     <div class="hero-btns">
-      <a href="#featured" class="btn-primary">Explore Books</a>
+      <a href="#library" class="btn-primary">Explore Books</a>
       <a href="#about" class="btn-ghost">About the Author</a>
     </div>
   </div>
   <div class="hero-right">
+    <div class="shelf-wall"></div>
     <div class="book-scene">
       <div class="book" id="heroBook">
         <div class="book-front">
@@ -1057,6 +1338,8 @@ footer {
         </div>
       </div>
       <div class="book-shadow"></div>
+      <div class="shelf-plank"></div>
+      <div class="lamp-glow"></div>
     </div>
     <div class="hero-bg-text">Silence</div>
   </div>
@@ -1065,7 +1348,46 @@ footer {
     <span class="sh-text">Scroll</span>
   </div>
 </section>
-
+ 
+<!-- Library -->
+<section id="library">
+  <div class="container">
+    <div class="lib-header r">
+      <span class="eyebrow">The Library</span>
+      <h2 class="section-h">Both novels,<br>one shelf</h2>
+      <p class="lib-intro">Two stories about love that arrives without a guarantee — read either, free, in full.</p>
+    </div>
+    <div class="lib-grid r d1">
+      <a href="#featured" class="lib-card lib-card--1">
+        <div class="lib-card-cover">
+          <span class="lib-tag">01</span>
+          <div class="lib-cover-title">The Thing About<br><em>Silence</em></div>
+          <div class="lib-cover-sub">Harsh · 1,807 km · Moni</div>
+        </div>
+        <div class="lib-card-body">
+          <span class="lib-genre">Literary Romance · 2025</span>
+          <h3 class="lib-card-title">The Thing About Silence</h3>
+          <p class="lib-card-desc">A year of voice notes, blue ticks, and a silence that was never actually quiet.</p>
+          <span class="lib-card-cta">Read the story →</span>
+        </div>
+      </a>
+      <a href="#featured-2" class="lib-card lib-card--2">
+        <div class="lib-card-cover has-photo">
+          <span class="lib-tag">02</span>
+          <div class="lib-cover-title">The Space Between<br><em>Waiting</em></div>
+          <div class="lib-cover-sub">Dhruv · Three Years · Ananya</div>
+        </div>
+        <div class="lib-card-body">
+          <span class="lib-genre">Literary Romance · 2026</span>
+          <h3 class="lib-card-title">The Space Between Waiting</h3>
+          <p class="lib-card-desc">Three college years of patient love, and the quiet lesson that it was never owed back.</p>
+          <span class="lib-card-cta">Read the story →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+ 
 <!-- Featured Book -->
 <section id="featured">
   <div class="container">
@@ -1123,7 +1445,65 @@ footer {
     </div>
   </div>
 </section>
-
+ 
+<!-- Second Book -->
+<section id="featured-2">
+  <div class="container">
+    <div class="feat-grid">
+      <div class="feat-content r">
+        <span class="eyebrow">New Release</span>
+        <div class="feat-genre">
+          <span class="genre-pill">Contemporary Fiction</span>
+          <span class="genre-pill">Literary Romance</span>
+          <span class="genre-pill">2026</span>
+        </div>
+        <h2 class="feat-h">The Space Between <em>Waiting</em></h2>
+        <p class="feat-synopsis">Dhruv notices Ananya on the first day of college and never quite looks away again. For three years he is there — at canteen table seven, in the library corner, on the other end of every late call — patient, present, certain that loving someone fully must eventually be enough. Ananya never lies to him. She never promises what she doesn't mean. She simply feels differently, and that is the whole tragedy. A story about the boy who waited, the girl who never asked him to, and the particular, aching honesty of learning that love is not owed.</p>
+        <div class="feat-meta-row">
+          <div class="feat-meta-item">
+            <span class="fm-val">154</span>
+            <span class="fm-label">Pages</span>
+          </div>
+          <div class="feat-meta-item">
+            <span class="fm-val">32</span>
+            <span class="fm-label">Chapters</span>
+          </div>
+          <div class="feat-meta-item">
+            <span class="fm-val">8</span>
+            <span class="fm-label">Parts</span>
+          </div>
+          <div class="feat-meta-item">
+            <span class="fm-val">3</span>
+            <span class="fm-label">Years</span>
+          </div>
+        </div>
+        <div class="feat-actions">
+          <a href="Space.pdf" download="The-Space-Between-Waiting-Yash.pdf" class="btn-primary">Download Free</a>
+          <a href="#preview-2" class="action-link">Read Sample</a>
+          <a href="#" class="action-link">Share</a>
+        </div>
+      </div>
+      <div class="r d2">
+        <div class="feat-cover">
+          <span class="feat-num">02</span>
+          <div class="feat-cover-inner has-photo">
+            <div class="fc-label">A Novel · 2026</div>
+            <div>
+              <div class="fc-title">The Space Between Waiting<br><em>Some Stories End Without Ever Beginning</em></div>
+              <div class="fc-hr"></div>
+              <div class="fc-tagline">A story of one boy who stayed, one girl who never asked him to, and three years spent learning the difference between love and a debt.</div>
+            </div>
+            <div class="fc-author-block">
+              <span class="fc-dist">Dhruv · Three Years · Ananya</span>
+              <span class="fc-author-name">Yash</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
 <!-- Pull Quote -->
 <section id="pull">
   <div class="container">
@@ -1136,7 +1516,7 @@ footer {
     </div>
   </div>
 </section>
-
+ 
 <!-- Chapter Preview -->
 <section id="preview">
   <div class="container">
@@ -1145,7 +1525,7 @@ footer {
         <span class="eyebrow">Inside the Book</span>
         <h2 class="section-h">Chapters</h2>
       </div>
-      <a href="Silence.pdf" download="The-Thing-About-Silence-Yash.pdf" class="btn-ghost" style="font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:rgba(232,228,220,0.3); text-decoration:none; display:inline-flex; align-items:center; gap:0.4rem; transition:color .25s;" onmouseover="this.style.color='rgba(232,228,220,0.8)'" onmouseout="this.style.color='rgba(232,228,220,0.3)'">Download to read all ↗</a>
+      <a href="Silence.pdf" download="The-Thing-About-Silence-Yash.pdf" class="btn-ghost" style="font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:rgba(240,232,216,0.3); text-decoration:none; display:inline-flex; align-items:center; gap:0.4rem; transition:color .25s;" onmouseover="this.style.color='rgba(240,232,216,0.8)'" onmouseout="this.style.color='rgba(240,232,216,0.3)'">Download to read all ↗</a>
     </div>
     <div class="chapters-grid r d2">
       <div class="chapter-item">
@@ -1181,7 +1561,52 @@ footer {
     </div>
   </div>
 </section>
-
+ 
+<!-- Chapter Preview 2 -->
+<section id="preview-2">
+  <div class="container">
+    <div class="preview-header r">
+      <div>
+        <span class="eyebrow">Inside the Book</span>
+        <h2 class="section-h">Chapters of <em>The Space Between Waiting</em></h2>
+      </div>
+      <a href="Space.pdf" download="The-Space-Between-Waiting-Yash.pdf" class="btn-ghost" style="font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:rgba(240,232,216,0.3); text-decoration:none; display:inline-flex; align-items:center; gap:0.4rem; transition:color .25s;" onmouseover="this.style.color='rgba(240,232,216,0.8)'" onmouseout="this.style.color='rgba(240,232,216,0.3)'">Download to read all ↗</a>
+    </div>
+    <div class="chapters-grid r d2">
+      <div class="chapter-item">
+        <span class="ch-num">I</span>
+        <div class="ch-title">The First Day</div>
+        <div class="ch-desc">The day Dhruv noticed her, and never quite looked away again.</div>
+      </div>
+      <div class="chapter-item">
+        <span class="ch-num">III</span>
+        <div class="ch-title">Canteen Table Seven</div>
+        <div class="ch-desc">Where the ordinary business of becoming friends quietly began.</div>
+      </div>
+      <div class="chapter-item">
+        <span class="ch-num">IX</span>
+        <div class="ch-title">Her Birthday</div>
+        <div class="ch-desc">He remembered how she took her coffee. He didn't know that wasn't a promise.</div>
+      </div>
+      <div class="chapter-item">
+        <span class="ch-num">XVI</span>
+        <div class="ch-title">After She Left the Room</div>
+        <div class="ch-desc">Some chapters, the title says everything the boy couldn't.</div>
+      </div>
+      <div class="chapter-item">
+        <span class="ch-num">XXX</span>
+        <div class="ch-title">Graduation Day</div>
+        <div class="ch-desc">Three years, and the ending arrives exactly the way it was always going to.</div>
+      </div>
+      <div class="chapter-item">
+        <span class="ch-num">XXXII</span>
+        <div class="ch-title"><em>The Space Between Waiting</em></div>
+        <div class="ch-desc">"I loved her. She didn't love me that way. Neither of us was wrong. I'm okay."</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
 <!-- About -->
 <section id="about">
   <div class="container">
@@ -1191,7 +1616,7 @@ footer {
         <h2 class="about-h">Yash writes about <em>the things we feel</em> but never say aloud</h2>
         <p class="about-p">Yash is a contemporary Indian author whose fiction lives in the precise gap between what people feel and what they manage to say. His work is drawn from the specific textures of modern connection — the <strong>blue ticks, the voice notes, the 1,807-kilometre silences</strong> — and gives language to experiences that most people carry without finding words for.</p>
         <p class="about-p">His debut novel follows Harsh across a year of unrequited love and daily voice notes, and has been described by readers as "the most honest account of being twenty-one in the digital age" — not because it flatters the experience, but because it refuses to soften it.</p>
-        <p class="about-p">He is currently writing his second novel. He believes the right sentence, said precisely, does more than a hundred approximate ones.</p>
+        <p class="about-p">His second novel, <em>The Space Between Waiting</em>, follows Dhruv across three college years spent loving Ananya patiently, and asks what it means to finally understand that love is not owed. He believes the right sentence, said precisely, does more than a hundred approximate ones.</p>
         <br>
         <a href="#contact" class="btn-primary" style="display:inline-block; margin-top:1rem;">Send a Letter</a>
       </div>
@@ -1210,7 +1635,7 @@ footer {
     </div>
   </div>
 </section>
-
+ 
 <!-- Reviews -->
 <section id="reviews">
   <div class="container">
@@ -1248,7 +1673,7 @@ footer {
     </div>
   </div>
 </section>
-
+ 
 <!-- Newsletter -->
 <section id="newsletter">
   <div class="container">
@@ -1270,7 +1695,7 @@ footer {
     </div>
   </div>
 </section>
-
+ 
 <!-- Contact -->
 <section id="contact">
   <div class="container">
@@ -1312,12 +1737,12 @@ footer {
     </div>
   </div>
 </section>
-
+ 
 <!-- Footer -->
 <footer>
   <div class="ft-logo">Yash<span>Writes</span></div>
   <ul class="ft-nav">
-    <li><a href="#featured">Books</a></li>
+    <li><a href="#library">Library</a></li>
     <li><a href="#about">Author</a></li>
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="#newsletter">Subscribe</a></li>
@@ -1325,18 +1750,18 @@ footer {
   </ul>
   <div class="ft-copy">© 2026 YashWrites</div>
 </footer>
-
+ 
 <script>
 // ── Loader
 window.addEventListener('load', () => {
   setTimeout(() => document.getElementById('loader').classList.add('out'), 2000);
 });
-
+ 
 // ── Cursor
 const cur = document.getElementById('cur');
 const ring = document.getElementById('cur-ring');
 let mx = 0, my = 0, rx = 0, ry = 0;
-
+ 
 document.addEventListener('mousemove', e => {
   mx = e.clientX; my = e.clientY;
   cur.style.left = mx + 'px'; cur.style.top = my + 'px';
@@ -1346,28 +1771,28 @@ document.addEventListener('mousemove', e => {
   ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
   requestAnimationFrame(loop);
 })();
-
-['a','button','.book-card','.chapter-item','.review-item'].forEach(sel => {
+ 
+['a','button','.book-card','.lib-card','.chapter-item','.review-item'].forEach(sel => {
   document.querySelectorAll(sel).forEach(el => {
     el.addEventListener('mouseenter', () => {
       cur.style.width = '14px'; cur.style.height = '14px';
       ring.style.width = '54px'; ring.style.height = '54px';
-      ring.style.borderColor = 'rgba(201,168,76,0.5)';
+      ring.style.borderColor = 'rgba(201,164,74,0.5)';
     });
     el.addEventListener('mouseleave', () => {
       cur.style.width = '8px'; cur.style.height = '8px';
       ring.style.width = '32px'; ring.style.height = '32px';
-      ring.style.borderColor = 'rgba(201,168,76,0.35)';
+      ring.style.borderColor = 'rgba(201,164,74,0.35)';
     });
   });
 });
-
+ 
 // ── Navbar scroll
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('s', window.scrollY > 60);
 }, { passive: true });
-
+ 
 // ── Hero book mouse tracking
 const heroBook = document.getElementById('heroBook');
 const heroSection = document.getElementById('hero');
@@ -1382,13 +1807,26 @@ heroSection.addEventListener('mouseleave', () => {
   heroBook.style.animation = '';
   heroBook.style.transform = '';
 });
+ 
+// ── Photo cover 3D tilt (library depth)
+document.querySelectorAll('.has-photo').forEach(el => {
+  const parent = el.closest('.feat-cover') || el.closest('.lib-card');
+  if (!parent) return;
+  parent.addEventListener('mousemove', e => {
+    const r = parent.getBoundingClientRect();
+    const dx = ((e.clientX - r.left) / r.width - 0.5) * 2;
+    const dy = ((e.clientY - r.top) / r.height - 0.5) * 2;
+    el.style.transform = `rotateY(${dx * 8}deg) rotateX(${-dy * 6}deg) scale(1.02)`;
+  });
+  parent.addEventListener('mouseleave', () => { el.style.transform = ''; });
+});
 
 // ── Scroll reveal
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('v'); } });
 }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
 document.querySelectorAll('.r').forEach(el => obs.observe(el));
-
+ 
 // ── Newsletter
 document.getElementById('nl-btn').addEventListener('click', () => {
   const inp = document.getElementById('nl-input');
@@ -1405,14 +1843,14 @@ document.getElementById('nl-btn').addEventListener('click', () => {
     }, 3500);
   }
 });
-
+ 
 // ── Contact form
 document.getElementById('cform').addEventListener('submit', e => {
   e.preventDefault();
   const btn = document.getElementById('csub');
   btn.textContent = 'Sent ✓';
   btn.style.background = '#4A7C59';
-  btn.style.color = '#E8E4DC';
+  btn.style.color = '#F0E8D8';
   setTimeout(() => {
     e.target.reset(); btn.textContent = 'Send →';
     btn.style.background = ''; btn.style.color = '';
@@ -1425,3 +1863,6 @@ document.getElementById('cform').addEventListener('submit', e => {
 </script>
 </body>
 </html>
+ 
+
+
